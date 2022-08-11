@@ -99,7 +99,9 @@ namespace GadgetQuickLaunch
 
 		private void bt_MS_Visual_Studio_Code_Click(object sender, EventArgs e)
 			{
-			Process.Start(@"H:\Microsoft_VS_Code\Code.exe --disable - gpu");
+			Process.Start(@"H:\Microsoft_VS_Code\Code.exe");
+			ProcessStartInfo arg = new ProcessStartInfo();
+			arg.Arguments = " --disable -gpu";
 			btnFocus.Focus();
 			}
 
