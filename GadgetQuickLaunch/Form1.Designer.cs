@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 			{
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.btCloseForm = new System.Windows.Forms.Button();
 			this.btAwesomeMiner = new System.Windows.Forms.Button();
@@ -41,6 +42,13 @@
 			this.label_bt_NotePadPlusPlus = new System.Windows.Forms.Label();
 			this.label_btWOT = new System.Windows.Forms.Label();
 			this.btnFocus = new System.Windows.Forms.Button();
+			this.bt_QuickAccess = new System.Windows.Forms.Button();
+			this.label_QuickAccess = new System.Windows.Forms.Label();
+			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.FrelenceToLive_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.XPUCT_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.CyberForum_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.contextMenuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btCloseForm
@@ -227,6 +235,72 @@
 			this.btnFocus.TabIndex = 12;
 			this.btnFocus.UseVisualStyleBackColor = false;
 			// 
+			// bt_QuickAccess
+			// 
+			this.bt_QuickAccess.BackColor = System.Drawing.Color.Transparent;
+			this.bt_QuickAccess.FlatAppearance.BorderSize = 0;
+			this.bt_QuickAccess.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+			this.bt_QuickAccess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.bt_QuickAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.bt_QuickAccess.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+			this.bt_QuickAccess.ForeColor = System.Drawing.Color.Black;
+			this.bt_QuickAccess.Image = ((System.Drawing.Image)(resources.GetObject("bt_QuickAccess.Image")));
+			this.bt_QuickAccess.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.bt_QuickAccess.Location = new System.Drawing.Point(2, 237);
+			this.bt_QuickAccess.Name = "bt_QuickAccess";
+			this.bt_QuickAccess.Size = new System.Drawing.Size(180, 35);
+			this.bt_QuickAccess.TabIndex = 14;
+			this.bt_QuickAccess.Text = "   Быстрый доступ";
+			this.bt_QuickAccess.UseVisualStyleBackColor = false;
+			this.bt_QuickAccess.Click += new System.EventHandler(this.bt_QuickAccess_Click);
+			this.bt_QuickAccess.MouseEnter += new System.EventHandler(this.bt_QuickAccess_MouseEnter);
+			// 
+			// label_QuickAccess
+			// 
+			this.label_QuickAccess.AutoSize = true;
+			this.label_QuickAccess.BackColor = System.Drawing.Color.Transparent;
+			this.label_QuickAccess.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+			this.label_QuickAccess.ForeColor = System.Drawing.Color.White;
+			this.label_QuickAccess.Location = new System.Drawing.Point(32, 244);
+			this.label_QuickAccess.Name = "label_QuickAccess";
+			this.label_QuickAccess.Size = new System.Drawing.Size(127, 16);
+			this.label_QuickAccess.TabIndex = 15;
+			this.label_QuickAccess.Text = "Быстрый доступ";
+			// 
+			// contextMenuStrip1
+			// 
+			this.contextMenuStrip1.BackColor = System.Drawing.SystemColors.Control;
+			this.contextMenuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FrelenceToLive_ToolStripMenuItem,
+            this.XPUCT_ToolStripMenuItem,
+            this.CyberForum_ToolStripMenuItem});
+			this.contextMenuStrip1.Name = "contextMenuStrip1";
+			this.contextMenuStrip1.ShowImageMargin = false;
+			this.contextMenuStrip1.Size = new System.Drawing.Size(167, 70);
+			this.contextMenuStrip1.MouseLeave += new System.EventHandler(this.ContextMenuStrip1_MouseLeave);
+			// 
+			// FrelenceToLive_ToolStripMenuItem
+			// 
+			this.FrelenceToLive_ToolStripMenuItem.Name = "FrelenceToLive_ToolStripMenuItem";
+			this.FrelenceToLive_ToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+			this.FrelenceToLive_ToolStripMenuItem.Text = "WEB   Фрилансер";
+			this.FrelenceToLive_ToolStripMenuItem.Click += new System.EventHandler(this.FrilanceToLive_Click);
+			// 
+			// XPUCT_ToolStripMenuItem
+			// 
+			this.XPUCT_ToolStripMenuItem.Name = "XPUCT_ToolStripMenuItem";
+			this.XPUCT_ToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+			this.XPUCT_ToolStripMenuItem.Text = "C#       ХРИСТ";
+			this.XPUCT_ToolStripMenuItem.Click += new System.EventHandler(this.XPUCT_Click);
+			// 
+			// CyberForum_ToolStripMenuItem
+			// 
+			this.CyberForum_ToolStripMenuItem.Name = "CyberForum_ToolStripMenuItem";
+			this.CyberForum_ToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+			this.CyberForum_ToolStripMenuItem.Text = "КиберФорум";
+			this.CyberForum_ToolStripMenuItem.Click += new System.EventHandler(this.CyberForum_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +308,8 @@
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(184, 381);
+			this.Controls.Add(this.label_QuickAccess);
+			this.Controls.Add(this.bt_QuickAccess);
 			this.Controls.Add(this.btnFocus);
 			this.Controls.Add(this.label_btWOT);
 			this.Controls.Add(this.label_bt_NotePadPlusPlus);
@@ -256,6 +332,7 @@
 			this.Text = "GadgetQuickLaunch";
 			this.TopMost = true;
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.contextMenuStrip1.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -274,6 +351,12 @@
 		private System.Windows.Forms.Label label_bt_NotePadPlusPlus;
 		private System.Windows.Forms.Label label_btWOT;
 		private System.Windows.Forms.Button btnFocus;
+		private System.Windows.Forms.Button bt_QuickAccess;
+		private System.Windows.Forms.Label label_QuickAccess;
+		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem FrelenceToLive_ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem XPUCT_ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem CyberForum_ToolStripMenuItem;
 		}
 	}
 
