@@ -84,7 +84,7 @@ namespace GadgetQuickLaunch
 		private void Form1_Load(object sender, EventArgs e)
 			{
 			Location = new Point(3240, 994);
-			//contextMenuStrip1.MouseLeave += bt_QuickAccess_MouseLeave;			// ЖДЯ ПОЯВЛЕНИЯ И СКРЫТИЯ ПО НАВЕДЕНИЮ НА КНОПККУ МЫШЬЮ
+			//contextMenuStrip1.MouseLeave += bt_QuickAccess_MouseLeave;			// ДДЯ ПОЯВЛЕНИЯ И СКРЫТИЯ ПО НАВЕДЕНИЮ НА КНОПККУ МЫШЬЮ
 			}
 
 		// Закрытие формы

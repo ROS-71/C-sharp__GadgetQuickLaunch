@@ -253,7 +253,7 @@
 			this.bt_QuickAccess.Text = "   Быстрый доступ";
 			this.bt_QuickAccess.UseVisualStyleBackColor = false;
 			this.bt_QuickAccess.Click += new System.EventHandler(this.bt_QuickAccess_Click);
-			this.bt_QuickAccess.MouseEnter += new System.EventHandler(this.bt_QuickAccess_MouseEnter);
+			//this.bt_QuickAccess.MouseEnter += new System.EventHandler(this.bt_QuickAccess_MouseEnter);
 			// 
 			// label_QuickAccess
 			// 
@@ -278,7 +278,7 @@
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
 			this.contextMenuStrip1.ShowImageMargin = false;
 			this.contextMenuStrip1.Size = new System.Drawing.Size(167, 70);
-			this.contextMenuStrip1.MouseLeave += new System.EventHandler(this.ContextMenuStrip1_MouseLeave);
+			//this.contextMenuStrip1.MouseLeave += new System.EventHandler(this.ContextMenuStrip1_MouseLeave);
 			// 
 			// FrelenceToLive_ToolStripMenuItem
 			// 
